@@ -20,7 +20,7 @@
 ##
 ##############################################################################
 # Requires the following commands from the file including this file
-# BOXLANG_HOME=/usr/local/bin/BoxLang
+# BOXLANG_HOME=$HOME/.boxlang
 # CLASSPATH=$BOXLANG_HOME/lib/boxlang-1.0.0-web.jar
 
 # Attempt to set APP_HOME

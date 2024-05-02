@@ -19,6 +19,6 @@
 ##  boxlang start up script for UN*X
 ##
 ##############################################################################
-BOXLANG_HOME=/usr/local/bin/BoxLang
-CLASSPATH=$BOXLANG_HOME/lib/boxlang-1.0.0-web.jar
-. bx-runner.inc
+export BOXLANG_HOME=$HOME/.boxlang
+export CLASSPATH=$BOXLANG_HOME/lib/boxlang-1.0.0-web.jar
+./bx-runner.inc

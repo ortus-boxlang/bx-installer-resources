@@ -20,7 +20,7 @@
 ##
 ##############################################################################
 # Requires the following commands from the file including this file
-# BOXLANG_HOME=/usr/local/bin/BoxLang
+# BOXLANG_HOME=$HOME/.boxlang
 # CLASSPATH=$BOXLANG_HOME/lib/boxlang-1.0.0-web.jar
 
 # Attempt to set APP_HOME
@@ -79,6 +79,8 @@ if [ -n "$JAVA_HOME" ] ; then
     if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
         # IBM's JDK on AIX uses strange locations for the executables
         JAVACMD="$JAVA_HOME/jre/sh/java"
+	elif [ -f "$JAVA_HOME" ] ; then
+		JAVACMD="$JAVA_HOME"
     else
         JAVACMD="$JAVA_HOME/bin/java"
     fi
