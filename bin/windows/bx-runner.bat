@@ -5,12 +5,12 @@
 @rem
 @rem ##########################################################################
 @rem Set local scope for the variables with windows NT shell
-@rem if "%OS%"=="Windows_NT" setlocal
+if "%OS%"=="Windows_NT" setlocal
 
 set CLASSPATH = %1
-echo %CLASSPATH%
+@REM echo %CLASSPATH%
 set APP_HOME = %2
-echo %APP_HOME%
+@REM echo %APP_HOME%
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and BOXLANG_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
