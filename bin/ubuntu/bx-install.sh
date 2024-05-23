@@ -22,11 +22,15 @@
 BOXLANG_HOME=$HOME/.boxlang
 BOXLANG_MODULE_HOME=$BOXLANG_HOME/modules
 
+DESTINATION="/usr/local/"
+DESTINATION_LIB="/usr/local/lib"
+DESTINATION_BIN="/usr/local/bin"
+
 rm -rf $BOXLANG_HOME/lib/temp $BOXLANG_MODULE_HOME
 mkdir -p $BOXLANG_HOME $BOXLANG_HOME/lib $BOXLANG_HOME/lib/temp $BOXLANG_MODULE_HOME
 
-curl -o $BOXLANG_HOME/lib/boxlang-1.0.0-all.jar https://ortus-temp.s3.amazonaws.com/jericho/libs/boxlang-1.0.0-all.jar
-curl -o $BOXLANG_HOME/lib/boxlang-1.0.0-web.jar https://ortus-temp.s3.amazonaws.com/jericho/libs/boxlang-1.0.0-web.jar
+curl -o $DESTINATION_LIB/boxlang-1.0.0-all.jar https://ortus-temp.s3.amazonaws.com/jericho/libs/boxlang-1.0.0-all.jar
+curl -o $DESTINATION_LIB/boxlang-1.0.0-web.jar https://ortus-temp.s3.amazonaws.com/jericho/libs/boxlang-1.0.0-web.jar
 
 module_esapi_runtime=https://ortus-temp.s3.amazonaws.com/boxlang-modules/bx-esapi/bx-esapi-1.0.0.zip
 module_esapi_zip=bx-esapi-1.0.0.zip
