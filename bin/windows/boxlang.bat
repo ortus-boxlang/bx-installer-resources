@@ -8,6 +8,6 @@
 if "%OS%"=="Windows_NT" setlocal
 
 if "%BOXLANG_HOME%" == "" set BOXLANG_HOME=%USERPROFILE%/.boxlang
-set CLASSPATH=%BOXLANG_HOME%\boxlang-1.0.0-all.jar
+set CLASSPATH=%BOXLANG_HOME%\boxlang-1.0.0.jar
 
 call bx-runner.bat %*

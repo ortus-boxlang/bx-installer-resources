@@ -20,5 +20,5 @@
 ##
 ##############################################################################
 export BOXLANG_HOME=$HOME/.boxlang
-export CLASSPATH=$BOXLANG_HOME/lib/boxlang-1.0.0-all.jar
+export CLASSPATH=$BOXLANG_HOME/lib/boxlang-1.0.0.jar
 ./bx-runner.inc
